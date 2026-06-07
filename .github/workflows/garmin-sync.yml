@@ -1,0 +1,36 @@
+name: Garmin Daily Sync
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # täglich 06:00 UTC = 08:00 CEST / 07:00 CET
+  workflow_dispatch:        # auch manuell auslösbar
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install garminconnect
+
+      - name: Garmin-Daten abrufen
+        env:
+          GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+        run: python garmin_sync.py
+
+      - name: Daten committen und pushen
+        run: |
+          git config user.name "Garmin Sync Bot"
+          git config user.email "garmin-bot@noreply"
+          git add garmin-data.json
+          git diff --staged --quiet || git commit -m "Garmin-Daten $(date +%Y-%m-%d)"
+          git push
