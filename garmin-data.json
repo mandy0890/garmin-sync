@@ -1,7 +1,7 @@
 {
   "date": "2026-06-07",
   "hrv": {
-    "value": null,
+    "value": 79,
     "status": "BALANCED",
     "weekly_avg": 66
   },
@@ -9,7 +9,7 @@
     "score": 67,
     "duration_h": 7.7
   },
-  "body_battery": null,
+  "body_battery": 17,
   "readiness": {
     "score": 31,
     "level": "LOW"
