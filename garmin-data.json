@@ -9,9 +9,9 @@
     "score": 64,
     "duration_h": 8.1
   },
-  "body_battery": 76,
+  "body_battery": 32,
   "readiness": {
-    "score": 42,
+    "score": 39,
     "level": "LOW"
   },
   "synced_at": "2026-06-08"
