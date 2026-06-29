@@ -1,18 +1,18 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "hrv": {
-    "value": 60,
+    "value": 66,
     "status": "BALANCED",
     "weekly_avg": 62
   },
   "sleep": {
-    "score": 66,
-    "duration_h": 5.9
+    "score": 60,
+    "duration_h": 6.5
   },
-  "body_battery": 53,
+  "body_battery": 80,
   "readiness": {
-    "score": 71,
+    "score": 64,
     "level": "MODERATE"
   },
-  "synced_at": "2026-06-28"
+  "synced_at": "2026-06-29"
 }
