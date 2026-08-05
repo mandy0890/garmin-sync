@@ -1,15 +1,18 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "hrv": {
-    "value": 48,
+    "value": 71,
     "status": "LOW",
-    "weekly_avg": 57
+    "weekly_avg": 56
   },
   "sleep": {
-    "score": null,
-    "duration_h": null
+    "score": 72,
+    "duration_h": 7.3
   },
-  "body_battery": null,
-  "readiness": null,
-  "synced_at": "2026-08-04"
+  "body_battery": 81,
+  "readiness": {
+    "score": 44,
+    "level": "LOW"
+  },
+  "synced_at": "2026-08-05"
 }
