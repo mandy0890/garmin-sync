@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "hrv": {
-    "value": 57,
+    "value": 52,
     "status": "BALANCED",
-    "weekly_avg": 55
+    "weekly_avg": 54
   },
   "sleep": {
-    "score": 79,
-    "duration_h": 7.5
+    "score": 82,
+    "duration_h": 8.2
   },
-  "body_battery": 47,
+  "body_battery": 53,
   "readiness": {
-    "score": 93,
-    "level": "HIGH"
+    "score": 98,
+    "level": "PRIME"
   },
-  "synced_at": "2026-11-26"
+  "synced_at": "2026-11-27"
 }
